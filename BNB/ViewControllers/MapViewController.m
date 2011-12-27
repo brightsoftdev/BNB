@@ -7,8 +7,11 @@
 //
 
 #import "MapViewController.h"
-#import "Tile.h"
 #import "DeviceManager.h"
+#import "Tile.h"
+#import "OceanTile.h"
+#import "MountainTile.h"
+#import "CoastalTile.h"
 
 
 @implementation MapViewController
@@ -48,11 +51,28 @@
   CGSize boardSize = CGSizeMake(50, 25);
   self.mapView.contentSize = CGSizeMake(boardSize.width * TileSize.width, boardSize.height * TileSize.height);
 
+  srand(time(NULL));
   NSUInteger index = 0;
   for (NSUInteger y = 0; y < boardSize.height; y++) {
     for (NSUInteger x = 0; x < boardSize.width; x++) {
       index++;
-      Tile *tile = [[Tile alloc] initWithIndex: index];
+      
+      Tile *tile;
+      NSUInteger tileType = rand() % 3;
+      switch (tileType) {
+        case 0:
+          tile = [[OceanTile alloc] initWithIndex: index];
+          break;
+        
+        case 1:
+          tile = [[MountainTile alloc] initWithIndex: index];
+          break;
+
+        case 2:
+          tile = [[CoastalTile alloc] initWithIndex: index];
+          break;
+      }
+
       tile.view.frame = CGRectMake(x*TileSize.width, y*TileSize.height, TileSize.width, TileSize.height);
       [self.mapView addSubview: tile.view];
     }

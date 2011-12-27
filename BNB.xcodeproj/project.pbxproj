@@ -13,12 +13,15 @@
 		8D53981F14AA224C00D507B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D53981D14AA224C00D507B8 /* InfoPlist.strings */; };
 		8D53982114AA224C00D507B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53982014AA224C00D507B8 /* main.m */; };
 		8D53982514AA224C00D507B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53982414AA224C00D507B8 /* AppDelegate.m */; };
-		8D53982D14AA2B2400D507B8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53982C14AA2B2400D507B8 /* MapViewController.m */; };
-		8D53982F14AA2C0700D507B8 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D53982E14AA2C0700D507B8 /* MapView.xib */; };
-		8D53983114AA2C1E00D507B8 /* MapView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D53983014AA2C1E00D507B8 /* MapView~ipad.xib */; };
-		8D53983314AA318800D507B8 /* TileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D53983214AA318800D507B8 /* TileView.xib */; };
-		8D53983614AA321900D507B8 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53983514AA321900D507B8 /* Tile.m */; };
-		8D53984414AA4A6400D507B8 /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53984314AA4A6400D507B8 /* DeviceManager.m */; };
+		8D53985314AA7FEF00D507B8 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D53984614AA7FEF00D507B8 /* MapView.xib */; };
+		8D53985414AA7FEF00D507B8 /* MapView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D53984714AA7FEF00D507B8 /* MapView~ipad.xib */; };
+		8D53985514AA7FEF00D507B8 /* TileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D53984814AA7FEF00D507B8 /* TileView.xib */; };
+		8D53985614AA7FEF00D507B8 /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53984B14AA7FEF00D507B8 /* DeviceManager.m */; };
+		8D53985714AA7FEF00D507B8 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53984F14AA7FEF00D507B8 /* Tile.m */; };
+		8D53985814AA7FEF00D507B8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53985214AA7FEF00D507B8 /* MapViewController.m */; };
+		8D53985B14AA801D00D507B8 /* OceanTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53985A14AA801D00D507B8 /* OceanTile.m */; };
+		8D53985E14AA829300D507B8 /* MountainTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53985D14AA829300D507B8 /* MountainTile.m */; };
+		8D53986114AA82A200D507B8 /* CoastalTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53986014AA82A200D507B8 /* CoastalTile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,16 +35,22 @@
 		8D53982214AA224C00D507B8 /* BNB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BNB-Prefix.pch"; sourceTree = "<group>"; };
 		8D53982314AA224C00D507B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D53982414AA224C00D507B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8D53982B14AA2B2400D507B8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
-		8D53982C14AA2B2400D507B8 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		8D53982E14AA2C0700D507B8 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
-		8D53983014AA2C1E00D507B8 /* MapView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MapView~ipad.xib"; sourceTree = "<group>"; };
-		8D53983214AA318800D507B8 /* TileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TileView.xib; sourceTree = "<group>"; };
-		8D53983414AA321900D507B8 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
-		8D53983514AA321900D507B8 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
-		8D53984114AA4A4B00D507B8 /* GCDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSingleton.h; sourceTree = "<group>"; };
-		8D53984214AA4A6400D507B8 /* DeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
-		8D53984314AA4A6400D507B8 /* DeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
+		8D53984614AA7FEF00D507B8 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		8D53984714AA7FEF00D507B8 /* MapView~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MapView~ipad.xib"; sourceTree = "<group>"; };
+		8D53984814AA7FEF00D507B8 /* TileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TileView.xib; sourceTree = "<group>"; };
+		8D53984A14AA7FEF00D507B8 /* DeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
+		8D53984B14AA7FEF00D507B8 /* DeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
+		8D53984C14AA7FEF00D507B8 /* GCDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSingleton.h; sourceTree = "<group>"; };
+		8D53984E14AA7FEF00D507B8 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		8D53984F14AA7FEF00D507B8 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		8D53985114AA7FEF00D507B8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		8D53985214AA7FEF00D507B8 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		8D53985914AA801D00D507B8 /* OceanTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OceanTile.h; sourceTree = "<group>"; };
+		8D53985A14AA801D00D507B8 /* OceanTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OceanTile.m; sourceTree = "<group>"; };
+		8D53985C14AA829300D507B8 /* MountainTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MountainTile.h; sourceTree = "<group>"; };
+		8D53985D14AA829300D507B8 /* MountainTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MountainTile.m; sourceTree = "<group>"; };
+		8D53985F14AA82A200D507B8 /* CoastalTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoastalTile.h; sourceTree = "<group>"; };
+		8D53986014AA82A200D507B8 /* CoastalTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoastalTile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,18 +97,12 @@
 		8D53981A14AA224C00D507B8 /* BNB */ = {
 			isa = PBXGroup;
 			children = (
+				8D53984914AA7FEF00D507B8 /* Singletons */,
+				8D53984D14AA7FEF00D507B8 /* Tiles */,
+				8D53985014AA7FEF00D507B8 /* ViewControllers */,
 				8D53982314AA224C00D507B8 /* AppDelegate.h */,
 				8D53982414AA224C00D507B8 /* AppDelegate.m */,
-				8D53982B14AA2B2400D507B8 /* MapViewController.h */,
-				8D53982C14AA2B2400D507B8 /* MapViewController.m */,
-				8D53983414AA321900D507B8 /* Tile.h */,
-				8D53983514AA321900D507B8 /* Tile.m */,
-				8D53984214AA4A6400D507B8 /* DeviceManager.h */,
-				8D53984314AA4A6400D507B8 /* DeviceManager.m */,
-				8D53984114AA4A4B00D507B8 /* GCDSingleton.h */,
-				8D53982E14AA2C0700D507B8 /* MapView.xib */,
-				8D53983014AA2C1E00D507B8 /* MapView~ipad.xib */,
-				8D53983214AA318800D507B8 /* TileView.xib */,
+				8D53984514AA7FEF00D507B8 /* Nibs */,
 				8D53981B14AA224C00D507B8 /* Supporting Files */,
 			);
 			path = BNB;
@@ -114,6 +117,50 @@
 				8D53982214AA224C00D507B8 /* BNB-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D53984514AA7FEF00D507B8 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				8D53984614AA7FEF00D507B8 /* MapView.xib */,
+				8D53984714AA7FEF00D507B8 /* MapView~ipad.xib */,
+				8D53984814AA7FEF00D507B8 /* TileView.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		8D53984914AA7FEF00D507B8 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				8D53984A14AA7FEF00D507B8 /* DeviceManager.h */,
+				8D53984B14AA7FEF00D507B8 /* DeviceManager.m */,
+				8D53984C14AA7FEF00D507B8 /* GCDSingleton.h */,
+			);
+			path = Singletons;
+			sourceTree = "<group>";
+		};
+		8D53984D14AA7FEF00D507B8 /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				8D53984E14AA7FEF00D507B8 /* Tile.h */,
+				8D53984F14AA7FEF00D507B8 /* Tile.m */,
+				8D53985914AA801D00D507B8 /* OceanTile.h */,
+				8D53985A14AA801D00D507B8 /* OceanTile.m */,
+				8D53985C14AA829300D507B8 /* MountainTile.h */,
+				8D53985D14AA829300D507B8 /* MountainTile.m */,
+				8D53985F14AA82A200D507B8 /* CoastalTile.h */,
+				8D53986014AA82A200D507B8 /* CoastalTile.m */,
+			);
+			path = Tiles;
+			sourceTree = "<group>";
+		};
+		8D53985014AA7FEF00D507B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D53985114AA7FEF00D507B8 /* MapViewController.h */,
+				8D53985214AA7FEF00D507B8 /* MapViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,9 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D53981F14AA224C00D507B8 /* InfoPlist.strings in Resources */,
-				8D53982F14AA2C0700D507B8 /* MapView.xib in Resources */,
-				8D53983114AA2C1E00D507B8 /* MapView~ipad.xib in Resources */,
-				8D53983314AA318800D507B8 /* TileView.xib in Resources */,
+				8D53985314AA7FEF00D507B8 /* MapView.xib in Resources */,
+				8D53985414AA7FEF00D507B8 /* MapView~ipad.xib in Resources */,
+				8D53985514AA7FEF00D507B8 /* TileView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,9 +229,12 @@
 			files = (
 				8D53982114AA224C00D507B8 /* main.m in Sources */,
 				8D53982514AA224C00D507B8 /* AppDelegate.m in Sources */,
-				8D53982D14AA2B2400D507B8 /* MapViewController.m in Sources */,
-				8D53983614AA321900D507B8 /* Tile.m in Sources */,
-				8D53984414AA4A6400D507B8 /* DeviceManager.m in Sources */,
+				8D53985614AA7FEF00D507B8 /* DeviceManager.m in Sources */,
+				8D53985714AA7FEF00D507B8 /* Tile.m in Sources */,
+				8D53985814AA7FEF00D507B8 /* MapViewController.m in Sources */,
+				8D53985B14AA801D00D507B8 /* OceanTile.m in Sources */,
+				8D53985E14AA829300D507B8 /* MountainTile.m in Sources */,
+				8D53986114AA82A200D507B8 /* CoastalTile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
