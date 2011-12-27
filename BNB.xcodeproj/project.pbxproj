@@ -22,6 +22,7 @@
 		8D53985B14AA801D00D507B8 /* OceanTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53985A14AA801D00D507B8 /* OceanTile.m */; };
 		8D53985E14AA829300D507B8 /* MountainTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53985D14AA829300D507B8 /* MountainTile.m */; };
 		8D53986114AA82A200D507B8 /* CoastalTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53986014AA82A200D507B8 /* CoastalTile.m */; };
+		8D53986914AA868E00D507B8 /* World.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53986814AA868E00D507B8 /* World.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		8D53985D14AA829300D507B8 /* MountainTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MountainTile.m; sourceTree = "<group>"; };
 		8D53985F14AA82A200D507B8 /* CoastalTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoastalTile.h; sourceTree = "<group>"; };
 		8D53986014AA82A200D507B8 /* CoastalTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoastalTile.m; sourceTree = "<group>"; };
+		8D53986714AA868E00D507B8 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		8D53986814AA868E00D507B8 /* World.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = World.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				8D53984914AA7FEF00D507B8 /* Singletons */,
 				8D53984D14AA7FEF00D507B8 /* Tiles */,
 				8D53985014AA7FEF00D507B8 /* ViewControllers */,
+				8D53986714AA868E00D507B8 /* World.h */,
+				8D53986814AA868E00D507B8 /* World.m */,
 				8D53982314AA224C00D507B8 /* AppDelegate.h */,
 				8D53982414AA224C00D507B8 /* AppDelegate.m */,
 				8D53984514AA7FEF00D507B8 /* Nibs */,
@@ -235,6 +240,7 @@
 				8D53985B14AA801D00D507B8 /* OceanTile.m in Sources */,
 				8D53985E14AA829300D507B8 /* MountainTile.m in Sources */,
 				8D53986114AA82A200D507B8 /* CoastalTile.m in Sources */,
+				8D53986914AA868E00D507B8 /* World.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,11 +308,15 @@
 		8D53982914AA224C00D507B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sean Soper (EL8QKBPH5E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sean Soper (EL8QKBPH5E)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BNB/BNB-Prefix.pch";
 				INFOPLIST_FILE = "BNB/BNB-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A44A31DC-6224-4EE1-B614-7C3343545F0F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A44A31DC-6224-4EE1-B614-7C3343545F0F";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
