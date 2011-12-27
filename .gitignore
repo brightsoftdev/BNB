@@ -1,0 +1,12 @@
+build/
+*.mode1v3
+*.pbxuser
+*.perspective 
+*.perspectivev3
+*.pyc 
+*~.nib/
+*.xcworkspace/
+xcuserdata/
+.DS_Store
+profile
+.LSOverride
