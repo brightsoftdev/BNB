@@ -13,9 +13,16 @@ struct TileSize {
   CGFloat height;
 } TileSize;
 
+struct TileTypes {
+  NSUInteger ocean;
+  NSUInteger mountain;
+  NSUInteger coastal;
+} TileTypes;
+
 @interface Tile : NSObject
 
 @property (nonatomic, strong) IBOutlet UIView *view;
+@property (nonatomic, strong) IBOutlet UILabel *indexLabel;
 @property (nonatomic, assign) NSUInteger index;
 @property (nonatomic, strong) UIColor *color;
 

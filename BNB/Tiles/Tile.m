@@ -8,14 +8,22 @@
 
 #import "Tile.h"
 
+
 struct TileSize TileSize = {
   .width = 64,
   .height = 64
 };
 
+struct TileTypes TileTypes = {
+  .ocean = 1,
+  .mountain = 2,
+  .coastal = 3
+};
+
+
 @implementation Tile
 
-@synthesize view;
+@synthesize view, indexLabel;
 @synthesize index = _index,
             color = _color;
 
@@ -24,6 +32,7 @@ struct TileSize TileSize = {
   if (self) {
     self.index = index;
     [[UINib nibWithNibName: @"TileView" bundle: nil] instantiateWithOwner: self options: nil];
+    self.indexLabel.text = [NSString stringWithFormat: @"%u", index];
   }
 
   return self;

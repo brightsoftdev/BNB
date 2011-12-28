@@ -10,8 +10,8 @@
 
 @interface World : NSObject
 
-@property (nonatomic, strong) NSArray *tiles;
-@property (nonatomic, assign) NSUInteger width, height;
+@property (nonatomic, strong, readonly) NSArray *tiles;
+@property (nonatomic, assign, readonly) NSUInteger width, height;
 
 - (id) initWithWidth:(NSUInteger) width
               height:(NSUInteger) height;
