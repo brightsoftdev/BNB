@@ -46,7 +46,7 @@
 
   self.mapView.bounces = NO;
 
-  CGSize boardSize = CGSizeMake(4, 10);
+  CGSize boardSize = CGSizeMake(50, 25);
   self.mapView.contentSize = CGSizeMake(boardSize.width * TileSize.width, boardSize.height * TileSize.height);
 
   World *world = [[World alloc] initWithWidth: boardSize.width height: boardSize.height];

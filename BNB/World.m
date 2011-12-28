@@ -87,9 +87,10 @@ struct Directions {
 
 - (void) generate:(UIScrollView *) mapView {
   srand(time(NULL));
-  NSMutableArray *tiles = [[NSMutableArray alloc] initWithCapacity: self.width * self.height];
 
+  NSMutableArray *tiles = [[NSMutableArray alloc] initWithCapacity: self.width * self.height];
   NSUInteger index = 0;
+
   for (NSUInteger y = 0; y < self.height; y++) {
     for (NSUInteger x = 0; x < self.width; x++) {
       Tile *tile;
