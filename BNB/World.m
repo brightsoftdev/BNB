@@ -31,10 +31,18 @@ struct Directions {
            height = _height;
 
 
+- (NSUInteger) rowForIndex:(NSUInteger) index {
+  return index / self.width;
+}
+
+- (NSUInteger) columnForIndex:(NSUInteger) index {
+  return index % self.width;
+}
+
 - (NSInteger) adjacentTile:(NSUInteger) index
                   direction:(NSUInteger) direction {
-  NSUInteger row = index / self.width;
-  NSUInteger column = index % self.width;
+  NSUInteger row = [self rowForIndex: index];
+  NSUInteger column = [self columnForIndex: index];
   NSInteger result = NSNotFound;
 
   if (direction == Directions.northwest) {
@@ -74,6 +82,31 @@ struct Directions {
   return result;
 }
 
+- (Tile *) generateTile:(NSUInteger) index {
+  Tile *tile;
+  NSUInteger row = [self rowForIndex: index];
+  NSUInteger column = [self columnForIndex: index];
+
+  if (row == 0 ||
+      row == (self.height - 1) ||
+      column == 0 ||
+      column == (self.width - 1)) {
+    tile = [[OceanTile alloc] initWithIndex: index];
+    return tile;
+  }
+
+  NSUInteger tileType = (rand() % (sizeof(TileTypes)/sizeof(NSUInteger)))+1;
+
+  if (tileType == TileTypes.ocean)
+    tile = [[OceanTile alloc] initWithIndex: index];
+  else if (tileType == TileTypes.mountain)
+    tile = [[MountainTile alloc] initWithIndex: index];
+  else if (tileType == TileTypes.coastal)
+    tile = [[CoastalTile alloc] initWithIndex: index];
+
+  return tile;
+}
+
 - (id) initWithWidth:(NSUInteger) width
               height:(NSUInteger) height {
   self = [super init];
@@ -93,15 +126,7 @@ struct Directions {
 
   for (NSUInteger y = 0; y < self.height; y++) {
     for (NSUInteger x = 0; x < self.width; x++) {
-      Tile *tile;
-      NSUInteger tileType = (rand() % (sizeof(TileTypes)/sizeof(NSUInteger)))+1;
-
-      if (tileType == TileTypes.ocean)
-        tile = [[OceanTile alloc] initWithIndex: index];
-      else if (tileType == TileTypes.mountain)
-        tile = [[MountainTile alloc] initWithIndex: index];
-      else if (tileType == TileTypes.coastal)
-        tile = [[CoastalTile alloc] initWithIndex: index];
+      Tile *tile = [self generateTile: index];
 
       [tiles addObject: tile];
       tile.view.frame = CGRectMake(x*TileSize.width, y*TileSize.height, TileSize.width, TileSize.height);
