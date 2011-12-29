@@ -23,6 +23,9 @@
 		8D53985E14AA829300D507B8 /* MountainTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53985D14AA829300D507B8 /* MountainTile.m */; };
 		8D53986114AA82A200D507B8 /* CoastalTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53986014AA82A200D507B8 /* CoastalTile.m */; };
 		8D53986914AA868E00D507B8 /* World.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D53986814AA868E00D507B8 /* World.m */; };
+		8D53988214AD17EF00D507B8 /* dirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D53987F14AD17EF00D507B8 /* dirt.png */; };
+		8D53988314AD17EF00D507B8 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D53988014AD17EF00D507B8 /* grass.png */; };
+		8D53988414AD17EF00D507B8 /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D53988114AD17EF00D507B8 /* water.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		8D53986014AA82A200D507B8 /* CoastalTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoastalTile.m; sourceTree = "<group>"; };
 		8D53986714AA868E00D507B8 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
 		8D53986814AA868E00D507B8 /* World.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = World.m; sourceTree = "<group>"; };
+		8D53987F14AD17EF00D507B8 /* dirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirt.png; sourceTree = "<group>"; };
+		8D53988014AD17EF00D507B8 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		8D53988114AD17EF00D507B8 /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 				8D53982314AA224C00D507B8 /* AppDelegate.h */,
 				8D53982414AA224C00D507B8 /* AppDelegate.m */,
 				8D53984514AA7FEF00D507B8 /* Nibs */,
+				8D53987E14AD17EF00D507B8 /* Images */,
 				8D53981B14AA224C00D507B8 /* Supporting Files */,
 			);
 			path = BNB;
@@ -168,6 +175,16 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		8D53987E14AD17EF00D507B8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8D53987F14AD17EF00D507B8 /* dirt.png */,
+				8D53988014AD17EF00D507B8 /* grass.png */,
+				8D53988114AD17EF00D507B8 /* water.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,6 +239,9 @@
 				8D53985314AA7FEF00D507B8 /* MapView.xib in Resources */,
 				8D53985414AA7FEF00D507B8 /* MapView~ipad.xib in Resources */,
 				8D53985514AA7FEF00D507B8 /* TileView.xib in Resources */,
+				8D53988214AD17EF00D507B8 /* dirt.png in Resources */,
+				8D53988314AD17EF00D507B8 /* grass.png in Resources */,
+				8D53988414AD17EF00D507B8 /* water.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

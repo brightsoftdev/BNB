@@ -14,6 +14,7 @@
   self = [super initWithIndex: index];
   if (self) {
     self.color = [UIColor greenColor];
+//    self.imageView.image = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource: @"grass" ofType: @"png"]];
   }
 
   return self;

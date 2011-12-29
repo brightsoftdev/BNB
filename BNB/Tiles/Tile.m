@@ -23,7 +23,7 @@ struct TileTypes TileTypes = {
 
 @implementation Tile
 
-@synthesize view, indexLabel;
+@synthesize view, imageView, indexLabel;
 @synthesize index = _index,
             color = _color;
 
