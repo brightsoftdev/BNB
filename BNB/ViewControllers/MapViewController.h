@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController <UIScrollViewDelegate>
 
-@property (nonatomic, strong) IBOutlet UIScrollView *mapView;
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, strong) UIView *worldView;
 
 @end

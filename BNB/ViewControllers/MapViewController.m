@@ -14,7 +14,7 @@
 
 @implementation MapViewController
 
-@synthesize mapView;
+@synthesize scrollView, worldView;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -44,20 +44,18 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  self.mapView.bounces = NO;
+  self.scrollView.bounces = NO;
 
-  CGSize boardSize = CGSizeMake(50, 25);
-  self.mapView.contentSize = CGSizeMake(boardSize.width * TileSize.width, boardSize.height * TileSize.height);
+  CGSize boardSize = CGSizeMake(50, 50);
+  self.scrollView.contentSize = CGSizeMake(boardSize.width * TileSize.width, boardSize.height * TileSize.height);
 
+  self.worldView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.scrollView.contentSize.width, self.scrollView.contentSize.height)];
   World *world = [[World alloc] initWithWidth: boardSize.width height: boardSize.height];
-  [world generate: self.mapView];
+  [world generate: self.worldView];
+  [self.scrollView addSubview: self.worldView];
 
-  if ([DeviceManager defaultManager].iphone &&
-      [DeviceManager defaultManager].ios4) {
-    self.mapView.contentInset = UIEdgeInsetsMake(0, 96, 0, -96);
-    self.mapView.contentOffset = CGPointMake(-96, 0);    
-  } else if ([DeviceManager defaultManager].ipad) {
-    self.mapView.frame = CGRectMake(0, -20, 1024, 768);
+  if ([DeviceManager defaultManager].ipad) {
+    self.scrollView.frame = CGRectMake(0, -20, 1024, 768);
   }
 }
 
@@ -70,6 +68,13 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
           interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+
+
+#pragma mark - UIScrollViewDelegate
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+  return self.worldView;
 }
 
 @end

@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface World : NSObject
+@interface World : NSObject {
+
+}
 
 @property (nonatomic, strong, readonly) NSArray *tiles;
 @property (nonatomic, assign, readonly) NSUInteger width, height;
@@ -16,6 +18,6 @@
 - (id) initWithWidth:(NSUInteger) width
               height:(NSUInteger) height;
 
-- (void) generate:(UIScrollView *) mapView;
+- (void) generate:(UIView *) mapView;
 
 @end
